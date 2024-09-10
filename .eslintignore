@@ -1,0 +1,17 @@
+package.json
+package-lock.json
+/node_modules*
+/public*
+/build
+/dist
+/coverage
+/src/locales*
+
+*.mp4
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+.prettierignore
