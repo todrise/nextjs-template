@@ -12,20 +12,19 @@ export default function LandingPage() {
 					<PageName>
 						<FormattedMessage id="landing" />
 					</PageName>
-					<SpacePlaceholder height="20rem" color="#f1f1f1" />
+					<SpacePlaceholder height="20rem" color="#eee" borderColor="#eee" />
 				</BoxedContainer>
 				<BoxedContainer>
 					<PageName>
 						<FormattedMessage id="another_section" />
 					</PageName>
-					<SpacePlaceholder height="20rem" color="#f1f1f1" />
+					<SpacePlaceholder height="20rem" color="#eee" borderColor="#eee" />
 				</BoxedContainer>
 			</Section>
 			<Section>
 				<BoxedContainer>
 					<PageName>
 						<FormattedMessage id="footer" />
-						{theme.breakpoints.up("lg")}
 					</PageName>
 				</BoxedContainer>
 			</Section>
