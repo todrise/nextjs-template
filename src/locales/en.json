@@ -3,5 +3,7 @@
 	"landing": "Landing",
 	"register": "Register",
 	"login": "Login",
-	"not_found": "Not found"
+	"another_section": "Another section",
+	"not_found": "Not found",
+	"footer": "Footer"
 }

@@ -120,7 +120,6 @@ html {
 	padding: 0;
 	margin: 0;
 	color: #333333;
-	font-size: 62.5%;
 }
 
 img {
@@ -158,7 +157,6 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	font-family: "Montserrat", Helvetica, Arial, "Microsoft YaHei New", "Microsoft Yahei", SimSun, STXihei, sans-serif;
 }
 
 input {

@@ -1,5 +1,6 @@
 import { Button, styled } from "@mui/material";
 import useLocale from "@/hooks/useLocale";
+import { DEBUG_MODE } from "@/consts";
 
 export default function LanguageSwitcher() {
 	const { locale, setLocale } = useLocale();
@@ -13,5 +14,5 @@ export default function LanguageSwitcher() {
 }
 
 const Wrapper = styled("div")`
-	padding: 1rem;
+	border: ${DEBUG_MODE ? "1px" : 0} dashed #999;
 `;

@@ -3,5 +3,7 @@
 	"landing": "着陆页",
 	"register": "注册",
 	"login": "登录",
-	"not_found": "404"
+	"not_found": "404",
+	"another_section": "另一节",
+	"footer": "页脚"
 }

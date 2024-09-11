@@ -1,29 +1,39 @@
 import { styled } from "@mui/material";
 import { MUIStyledCommonProps } from "@mui/system";
-
-export const PageName = styled("div")<MUIStyledCommonProps>`
-	border: 1px dashed ${(props) => props.theme.palette.text.primary};
-	min-height: 60rem;
-	padding: 2rem;
-	margin: 0 2rem;
-	font-size: 2rem;
-	@media (max-width: 780px) {
-		margin: 0;
-		border-left: 0;
-		border-right: 0;
-	}
-`;
+import { DEBUG_MODE } from "@/consts";
 
 type SpacePlaceholderProps = MUIStyledCommonProps & {
-	width?: number;
-	height?: number;
+	width?: string;
+	height?: string;
 	color?: string;
 	borderColor?: string;
 };
 
+export const Section = styled("div")`
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border: ${DEBUG_MODE ? "1px" : 0} dashed #999;
+`;
+
+export const BoxedContainer = styled("div")<MUIStyledCommonProps>`
+	display: flex;
+	flex-direction: column;
+	border: ${DEBUG_MODE ? "1px" : 0} dashed #999;
+	max-width: 110rem;
+	width: 100%;
+`;
+
+export const PageName = styled("div")<MUIStyledCommonProps>`
+	font-size: 2rem;
+	color: ${(props) => props.theme.palette.text.primary};
+	padding: 2rem 0;
+`;
+
 export const SpacePlaceholder = styled("div")<SpacePlaceholderProps>`
-	width: ${(props) => props.width}rem;
-	height: ${(props) => props.height}rem;
-	background-color: ${(props) => props.color ?? "none"};
-	border: 1px dashed ${(props) => props.borderColor ?? "#999"};
+	width: ${(props) => props.width || "100%"};
+	height: ${(props) => props.height || 0};
+	background-color: ${(props) => props.color ?? "transparent"};
+	border: 1px dashed ${(props) => props.borderColor ?? "transparent"};
 `;

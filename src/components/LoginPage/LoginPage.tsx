@@ -1,11 +1,15 @@
 "use client";
 import { FormattedMessage } from "react-intl";
-import { PageName } from "@/components/Styled";
+import { BoxedContainer, PageName, Section } from "@/components/Styled";
 
 export default function LoginPage() {
 	return (
-		<PageName>
-			<FormattedMessage id="login" />
-		</PageName>
+		<Section>
+			<BoxedContainer>
+				<PageName>
+					<FormattedMessage id="login" />
+				</PageName>
+			</BoxedContainer>
+		</Section>
 	);
 }

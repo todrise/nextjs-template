@@ -1,0 +1,9 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Montserrat", Helvetica, Arial, "Microsoft YaHei New", "Microsoft Yahei", SimSun, STXihei, sans-serif;
+	display: flex;
+	flex-direction: column;
+	padding-top: 64px;
+}
