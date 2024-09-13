@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "concurrently --kill-others \"npm run start:api\" \"next dev\"",
+		"dev": "concurrently --kill-others \"npm run start:api\" \"next dev -p 3001\"",
 		"build": "next build",
 		"start": "next start",
 		"start:api": "ts-node src/mock/index.mjs",
